@@ -1,6 +1,6 @@
-# adv_basics
+# Quiz App
 
-A new Flutter project.
+A new Flutter project for simple quiz app.
 
 ## Getting Started
 
