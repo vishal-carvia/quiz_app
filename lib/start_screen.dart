@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key});
+  const StartScreen(this.startQuiz, {super.key});
+
+  final void Function() startQuiz;
 
   @override
   Widget build(context) {
@@ -13,7 +15,7 @@ class StartScreen extends StatelessWidget {
             'assets/images/quiz-logo.png',
             width: 300,
             // here we are just adding overlay color with less opacity.
-            color: const Color.fromARGB(109, 255, 255, 255),
+            color: const Color.fromARGB(126, 255, 255, 255),
           ),
           // We can use this approach down here, but its performance intensive so not recommended.
           // Opacity(
@@ -37,9 +39,7 @@ class StartScreen extends StatelessWidget {
             height: 30,
           ),
           OutlinedButton.icon(
-            onPressed: () {
-              //
-            },
+            onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
             ),
