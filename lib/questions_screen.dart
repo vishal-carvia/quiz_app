@@ -18,6 +18,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   var currentQuestionIndex = 0;
 
   void answerQuestion(String selectedAnswer) {
+// In Flutter, when you define a StatefulWidget and its corresponding State class, you need to use the widget keyword to access the properties of the parent StatefulWidget within the State class.
+
     widget.onSelectAnswer(selectedAnswer);
     setState(() {
       currentQuestionIndex++;
@@ -31,6 +33,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     return SizedBox(
       width: double.infinity,
       child: Container(
+        // margin: const EdgeInsets.only(right: 40, left: 40),
         margin: const EdgeInsets.all(40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
