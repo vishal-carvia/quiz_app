@@ -32,6 +32,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
     return SizedBox(
       width: double.infinity,
+      height: double.infinity,
       child: Container(
         // margin: const EdgeInsets.only(right: 40, left: 40),
         margin: const EdgeInsets.all(40),
@@ -43,11 +44,11 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               currentQuestion.text,
               style: GoogleFonts.lato(
                   color: const Color.fromARGB(145, 255, 255, 255),
-                  fontSize: 24,
+                  fontSize: 28,
                   fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 50),
 
             // ... is used to spread list items.
             ...currentQuestion.getShuffledAnswers().map((answer) {

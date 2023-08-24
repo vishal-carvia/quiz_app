@@ -48,9 +48,9 @@ class ResultsScreen extends StatelessWidget {
                 textAlign: TextAlign.center),
             const SizedBox(height: 30),
             QuestionsSummary(summaryData),
-            // const Text('List of answers and questoins...'),
+            // const Text('List of answers and questions...'),
             const SizedBox(
-              height: 30,
+              height: 40,
             ),
             TextButton.icon(
               onPressed: onRestart,
